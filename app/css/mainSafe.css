@@ -1,0 +1,37 @@
+.main-safe {
+    position: relative;
+    margin:auto;
+    margin-top: -250px;
+    background-color: #ffffff;
+}
+
+
+.title-text-safe {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #616161;
+    line-height: 24px;
+    font-weight: 600;
+    font-style: italic;
+    width: 70%;
+    margin: auto;
+}
+
+.title-text-safe h1 {
+    margin: 5px 0;
+    color: #d97916;
+}
+
+/* SHOW SAFE */
+
+.blog-show-item-safe {
+    width: 80%;
+    margin: auto;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

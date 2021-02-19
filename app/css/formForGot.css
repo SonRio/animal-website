@@ -1,0 +1,107 @@
+#forgot {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/bg-detail.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#main-forgot {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    border-radius: 20px;
+    background-image: linear-gradient(-90deg, #DAB480, #D1402A);
+    width: 70%;
+    margin: auto;
+    transform: translate(0, 50%);
+    padding: 10px;
+    transition: .5;
+}
+
+.img-forgot img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.img-forgot .fa-arrow-circle-left {
+    position: absolute;
+    top: 7%;
+    left: 3%;
+    color: #ffffff;
+    transition: .3;
+}
+
+.img-forgot .fa-arrow-circle-left:hover {
+    color: #000000;
+    transition: .3;
+}
+
+.fill-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.fill-email h2 {
+    color: #D1402A;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #DAB480;
+    padding: 10px;
+    transition: .2s;
+    background-color: transparent;
+}
+
+.form-group:focus-within {
+    border: 1px solid #D1402A;
+    transition: .2s;
+}
+
+.form-group input {
+    font-style: italic;
+    font-size: 16px;
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 5px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    transition: .3s;
+}
+
+.error {
+    color: #ffffff;
+}
+
+.main-forgot-pass .btn-group button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #D1402A;
+    cursor: pointer;
+    float: right;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.main-forgot-pass .btn-group button:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    transition: .3s;
+}

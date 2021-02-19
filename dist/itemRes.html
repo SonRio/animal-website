@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ITEM RESTAURANT</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+<header>
+    <!-- navbar -->
+    <div id=menu class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="/assets/images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#"></a>
+            <a href="#" class="active">ĐỒ ĂN</a>
+            <a href="../index.html">ĐỒ UỐNG</a>
+            <a href="../safe.html">KHUYẾN MÃI</a>
+            <a href="javascript:void(0);" class="icon" onclick="showItemMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a  class="register-login" href="../register.html"><button>Đăng kí</button></a>
+            <a class="register-login" href="../login.html"><button>Đăng nhập</button></a>
+          </div>
+          
+    </div>
+    <div class="title">
+        <img src="../assets/images/logo-banner.png" alt="">
+    </div>
+</header>
+<!-- END OF HEADER -->
+    <main>
+        <div class="main-information">
+            <!-- INFRO-RES -->
+<div class="infro-res">
+    <div class="infor-res-img">
+        <img src="../assets/images/res.jpg" alt="restaurant">
+    </div>
+
+    <div class="infor-res-text">
+        <h2 class="title-wc">
+        </h2>
+        <div class="text-infor">
+            <div class="infor-row">
+                <h1>NHÀ HÀNG ABC</h1>
+            </div>
+
+            <div class="infor-row">
+                <span>Địa chỉ:</span>
+                <span>123 Nguyễn Văn Linh</span>
+            </div>
+
+            <div class="infor-row">
+                <span>Đánh giá: </span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sologan">
+    <i>Ngon, bổ, rẻ, chất lượng........</i>
+</div>
+<!-- INFRO-RES -->
+            <div class="main-menu">
+                <div class="menu">
+    <h3>MENU</h3>
+    <ul>
+        <li>
+            <a href="#">
+                ĂN NO
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                ĂN VẶT
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                ĐỒ UỐNG
+            </a>
+        </li>
+    </ul>
+</div>
+                <div class="item-menu">
+                    <!-- MODAL -->
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <i onclick="hideModal()" class="fa fa-2x fa-window-close"></i>
+                        <h2>Thông báo</h2>
+                        <p id="show-content"></p>
+                        <div class="btn-group-modal">
+                            <a href="#">
+                                <button onclick="eventBtnOne()" id="btn-modal-one" class="btn-modal">
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button onclick="eventBtnTwo()" id="btn-modal-two" class="btn-modal">
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END OF MODAL -->
+                    <div onclick="showItemCart()" id="cart" class="cart-icon">
+    <span id="number"></span>
+</div>
+<!-- CART ICON -->
+
+<!-- CART -->
+<div id="show-cart" style="display: none">
+    <div class="arrow-up"></div>
+    <h3>Giỏ hàng</h3>
+    <div class="label-cart">
+        <label for="name">Món</label>
+        <label for="price">Đơn giá</label>
+    </div>
+    <div id="show-item-cart">
+    </div>
+    <div class="label-cart ship">
+        <span class="label-ship">Phí ship</span>
+        <span class="cost-ship">
+            15.000 <sup>đ</sup>
+        </span>
+    </div>
+    <div class="cart-group safe">
+        <select onchange="changeSafe(this)" class="safe-cost" name="safe" id="safe">
+            <option value=0>NULL<i class="fa fa-2x fa-map-marker"></i></option>
+            <option value=15000>FreeShip<i class="fa fa-2x fa-map-marker"></i></option>
+            <option value=20000>Giảm 20.000 <sup>đ</sup><i class="fa fa-2x fa-map-marker"></i></option>
+        </select>
+    </div>
+    <div class="label-cart total">
+        <label for="total">
+            Tổng tiền:
+        </label>
+        <label for="cost" id="cost"></label>
+    </div>
+
+    <div class="btn-pay">
+        <button onclick="getDelivery()">GIAO HÀNG</button>
+    </div>
+
+</div>
+                    <h3>DANH SÁCH MÓN</h3>
+                    <div id="show-item-menu">
+                        <div class="item-dish" index=${id}>
+    <div class="item-img">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+
+    <div class="item-infor">
+        <span>Món ABC</span><br>
+        <span>Giá: </span>
+        <span>20.000<sup>đ</sup></span><br>
+        <i>Đây là món được làm từ...</i>
+    </div>
+
+    <button onclick="addToCart('${id}','${img}','${name}','${price}')" class="btn-add">
+        <i class="fa fa-plus"></i>
+    </button>
+</div>
+                        <div class="item-dish" index=${id}>
+    <div class="item-img">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+
+    <div class="item-infor">
+        <span>Món ABC</span><br>
+        <span>Giá: </span>
+        <span>20.000<sup>đ</sup></span><br>
+        <i>Đây là món được làm từ...</i>
+    </div>
+
+    <button onclick="addToCart('${id}','${img}','${name}','${price}')" class="btn-add">
+        <i class="fa fa-plus"></i>
+    </button>
+</div>
+                        <div class="item-dish" index=${id}>
+    <div class="item-img">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+
+    <div class="item-infor">
+        <span>Món ABC</span><br>
+        <span>Giá: </span>
+        <span>20.000<sup>đ</sup></span><br>
+        <i>Đây là món được làm từ...</i>
+    </div>
+
+    <button onclick="addToCart('${id}','${img}','${name}','${price}')" class="btn-add">
+        <i class="fa fa-plus"></i>
+    </button>
+</div>
+                        <div class="item-dish" index=${id}>
+    <div class="item-img">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+
+    <div class="item-infor">
+        <span>Món ABC</span><br>
+        <span>Giá: </span>
+        <span>20.000<sup>đ</sup></span><br>
+        <i>Đây là món được làm từ...</i>
+    </div>
+
+    <button onclick="addToCart('${id}','${img}','${name}','${price}')" class="btn-add">
+        <i class="fa fa-plus"></i>
+    </button>
+</div>
+                    </div>
+                </div>
+            </div>
+            <!-- THANKS  -->
+            <div class="thanks">
+                <h3>CẢM ƠN QUÍ KHÁCH ĐÃ SỬ DỤNG DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                <i class="fa fa-5x fa-cutlery"></i>
+            </div>
+    
+            <!-- COMMENT -->
+            <div class="comment">
+                <div class="count-comment">
+                    <h4>Lượt bình luận</h4>
+                    <div class="item-comment">
+    <div class="user-comment">
+        <span>Tên tài khoản:</span>
+        <span>The Rio</span><br>
+        <span>Nội dung: </span>
+        <span>Nhà hàng nay ok lắm ...</span><br>
+        <a href="#">Trả lời</a>
+        <span>Lượt thích</span>
+        <i class="fa fa-lg fa-thumbs-up"></i>
+    </div>
+    <div class="star-rating-comment">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </div>
+</div>
+                    <div class="item-comment">
+    <div class="user-comment">
+        <span>Tên tài khoản:</span>
+        <span>The Rio</span><br>
+        <span>Nội dung: </span>
+        <span>Nhà hàng nay ok lắm ...</span><br>
+        <a href="#">Trả lời</a>
+        <span>Lượt thích</span>
+        <i class="fa fa-lg fa-thumbs-up"></i>
+    </div>
+    <div class="star-rating-comment">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </div>
+</div>
+                    <div class="item-comment">
+    <div class="user-comment">
+        <span>Tên tài khoản:</span>
+        <span>The Rio</span><br>
+        <span>Nội dung: </span>
+        <span>Nhà hàng nay ok lắm ...</span><br>
+        <a href="#">Trả lời</a>
+        <span>Lượt thích</span>
+        <i class="fa fa-lg fa-thumbs-up"></i>
+    </div>
+    <div class="star-rating-comment">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </div>
+</div>
+                </div>
+                <div class="send-comment">
+    <h4>Đánh giá</h4>
+    <div class="send-star-rating">
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+    </div>
+    <h4>Bình luận</h4>
+    <form>
+        <textarea name=""></textarea><br>
+        <button>Gửi</button>
+    </form>
+
+</div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+<footer>
+    <div class="footer-row-one">
+        <div class="company">
+            <span class="name">
+                BFOOD company
+            </span><br />
+            <ul class="address">
+                <li>Nguyễn Văn Linh</li>
+                <li>Tầng 1 Tòa nhà trực thăng</li>
+                <li>Hải Châu Đà Nẵng</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <span class="name">
+                Liên hệ
+            </span><br />
+            <ul class="address">
+                <li>Sđt: +84986 000 123 </li>
+                <li>Website: BFood.com</li>
+                <li>Hot line: 0236 123 456</li>
+            </ul>
+        </div>
+        <div class="about-me">
+            <span class="name">
+                Giới thiệu
+            </span><br />
+            <ul class="address">
+                <li>Được thành lập 2020</li>
+                <li>Với tên gọi BFood</li>
+            </ul>
+        </div>
+        <div class="logo-footer">
+            <div class="logo-bfood lone">
+                BFood
+            </div>
+            <div class="logo-bfood ltow">
+                BFood
+            </div>
+        </div>
+    </div>
+    <div class="footer-row-two">
+        <span>@CopyRight 2020, Design By BFood</span>
+    </div>
+</footer>
+<!-- END OF FOOTER -->
+</body>
+<script src="https://use.fontawesome.com/452826394c.js"></script>
+<script src="./js/common.js"></script>
+<!-- endbuild -->
+
+</html>

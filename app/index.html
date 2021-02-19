@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HOME</title>
+</head>
+
+<body>
+    @import "header.html"
+    <main>
+        <div class="main-home">
+            @import "search.html"
+            <!-- HOT-RESTAURANT -->
+            <h4 class="title-res">NHÀ HÀNG HOT</h4>
+            <div class="slide-show">
+                <button onclick="moveLeft(`show-hot-restaurant`)" id="btn-arrow-left" class="btn-arroww">
+                    <i class="fa fa-3x fa-arrow-circle-o-left"></i>
+                </button>
+                <div class="display-panel">
+                    <div id="show-hot-restaurant" class="show-item-restaurant">
+                        @import "itemRes.html"
+                        @import "itemRes.html"
+                        @import "itemRes.html"
+                        @import "itemRes.html"
+                    </div>
+                </div>
+    
+                <button onclick="moveRight(`show-hot-restaurant`)" id="btn-arrow-right" class="btn-arroww">
+                    <i class="fa fa-3x fa-arrow-circle-o-right"></i>
+                </button>
+            </div>
+            @import "introduce.html"
+            <!-- NEW-RESTAURANT -->
+            <h4 class="title-res">NHÀ HÀNG MỚI</h4>
+    
+            <div class="slide-show">
+                <button onclick="moveLeft(`show-new-restaurant`)" id="btn-arrow-left" class="btn-arroww">
+                    <i class="fa fa-3x fa-arrow-circle-o-left"></i>
+                </button>
+                <div class="display-panel">
+                    <div id="show-new-restaurant" class="show-item-restaurant">
+                        @import "itemRes.html"
+                        @import "itemRes.html"
+                        @import "itemRes.html"
+                        @import "itemRes.html"
+                    </div>
+                </div>
+    
+                <button onclick="moveRight(`show-new-restaurant`)" id="btn-arrow-right" class="btn-arroww">
+                    <i class="fa fa-3x fa-arrow-circle-o-right"></i>
+                </button>
+            </div>
+            <!-- NEW-RESTAURANT -->
+            @import "news.html"
+        </div>
+    </main>
+    @import "footer.html"
+</body>
+<script src="https://use.fontawesome.com/452826394c.js"></script>
+<script src="./js/common.js"></script>
+
+</html>

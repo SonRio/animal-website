@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HOME</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+<header>
+    <!-- navbar -->
+    <div id=menu class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="/assets/images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#"></a>
+            <a href="#" class="active">ĐỒ ĂN</a>
+            <a href="../index.html">ĐỒ UỐNG</a>
+            <a href="../safe.html">KHUYẾN MÃI</a>
+            <a href="javascript:void(0);" class="icon" onclick="showItemMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a  class="register-login" href="../register.html"><button>Đăng kí</button></a>
+            <a class="register-login" href="../login.html"><button>Đăng nhập</button></a>
+          </div>
+          
+    </div>
+    <div class="title">
+        <img src="../assets/images/logo-banner.png" alt="">
+    </div>
+</header>
+<!-- END OF HEADER -->
+    <main>
+        <div class="main-home">
+            <!-- SEARCH -->
+<div class="search">
+    <select class="city" name="city" id="city">
+        <option value="DN">Đà Nẵng<i class="fa fa-2x fa-map-marker"></i></option>
+        <option value="HCM">TP Hồ Chí Minh<i class="fa fa-2x fa-map-marker"></i></option>
+    </select>
+    <div class="input-search">
+        <input type="text" placeholder="Nhập tên món ăn..." name="search" id="search">
+        <button class="btn-search">
+            <i class="fa fa-2x fa-search"></i>
+        </button>
+    </div>
+</div>
+<!--END OF SEARCH -->
+            <!-- HOT-RESTAURANT -->
+            <h4 class="title-res">NHÀ HÀNG HOT</h4>
+            <div class="slide-show">
+                <button onclick="moveLeft(`show-hot-restaurant`)" id="btn-arrow-left" class="btn-arroww">
+                    <i class="fa fa-3x fa-arrow-circle-o-left"></i>
+                </button>
+                <div class="display-panel">
+                    <div id="show-hot-restaurant" class="show-item-restaurant">
+                        <div class="item-restaurant">
+
+    <div class="infor-group">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+    <div class="show-infor-restaurant">
+        <i>Nhà hàng ABC</i><br>
+        <i style="font-size:16px;">123 Nguyễn Văn Linh</i><br>
+        <span style="font-size:16px;">Chỉ từ: </span><i style="color:red;">20.000<sup>đ</sup></i><br>
+    </div>
+    <div class="rating-group">
+        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                class="rating__icon rating__icon--star fa fa-star"></i>
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star fa fa-star"></i>
+                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                        class="rating__icon rating__icon--star fa fa-star"></i>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i>
+                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i>
+                            <button><a href="../itemRes.html"><i
+                                        class="fa fa-lg fa-long-arrow-right"></i></a></button>
+    </div>
+</div>
+                        <div class="item-restaurant">
+
+    <div class="infor-group">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+    <div class="show-infor-restaurant">
+        <i>Nhà hàng ABC</i><br>
+        <i style="font-size:16px;">123 Nguyễn Văn Linh</i><br>
+        <span style="font-size:16px;">Chỉ từ: </span><i style="color:red;">20.000<sup>đ</sup></i><br>
+    </div>
+    <div class="rating-group">
+        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                class="rating__icon rating__icon--star fa fa-star"></i>
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star fa fa-star"></i>
+                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                        class="rating__icon rating__icon--star fa fa-star"></i>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i>
+                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i>
+                            <button><a href="../itemRes.html"><i
+                                        class="fa fa-lg fa-long-arrow-right"></i></a></button>
+    </div>
+</div>
+                        <div class="item-restaurant">
+
+    <div class="infor-group">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+    <div class="show-infor-restaurant">
+        <i>Nhà hàng ABC</i><br>
+        <i style="font-size:16px;">123 Nguyễn Văn Linh</i><br>
+        <span style="font-size:16px;">Chỉ từ: </span><i style="color:red;">20.000<sup>đ</sup></i><br>
+    </div>
+    <div class="rating-group">
+        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                class="rating__icon rating__icon--star fa fa-star"></i>
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star fa fa-star"></i>
+                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                        class="rating__icon rating__icon--star fa fa-star"></i>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i>
+                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i>
+                            <button><a href="../itemRes.html"><i
+                                        class="fa fa-lg fa-long-arrow-right"></i></a></button>
+    </div>
+</div>
+                        <div class="item-restaurant">
+
+    <div class="infor-group">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+    <div class="show-infor-restaurant">
+        <i>Nhà hàng ABC</i><br>
+        <i style="font-size:16px;">123 Nguyễn Văn Linh</i><br>
+        <span style="font-size:16px;">Chỉ từ: </span><i style="color:red;">20.000<sup>đ</sup></i><br>
+    </div>
+    <div class="rating-group">
+        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                class="rating__icon rating__icon--star fa fa-star"></i>
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star fa fa-star"></i>
+                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                        class="rating__icon rating__icon--star fa fa-star"></i>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i>
+                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i>
+                            <button><a href="../itemRes.html"><i
+                                        class="fa fa-lg fa-long-arrow-right"></i></a></button>
+    </div>
+</div>
+                    </div>
+                </div>
+    
+                <button onclick="moveRight(`show-hot-restaurant`)" id="btn-arrow-right" class="btn-arroww">
+                    <i class="fa fa-3x fa-arrow-circle-o-right"></i>
+                </button>
+            </div>
+            <!-- INTRODUCE -->
+<div class="introduce">
+    <div class="intro-infor">
+        <h4>
+            VỀ CHÚNG TÔI
+        </h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Corporis rem, consequuntur
+            explicabo libero tempora obcaecati aliquam
+            voluptate enim natus eius architecto eveniet
+            labore magnam, ut quisquam. Commodi minima
+            distinctio eos.
+        </p>
+    </div>
+    <div class="intro-img">
+        <img src="../assets/images/user.jpg" alt="user">
+    </div>
+
+</div>
+<!-- INTRODUCE -->
+            <!-- NEW-RESTAURANT -->
+            <h4 class="title-res">NHÀ HÀNG MỚI</h4>
+    
+            <div class="slide-show">
+                <button onclick="moveLeft(`show-new-restaurant`)" id="btn-arrow-left" class="btn-arroww">
+                    <i class="fa fa-3x fa-arrow-circle-o-left"></i>
+                </button>
+                <div class="display-panel">
+                    <div id="show-new-restaurant" class="show-item-restaurant">
+                        <div class="item-restaurant">
+
+    <div class="infor-group">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+    <div class="show-infor-restaurant">
+        <i>Nhà hàng ABC</i><br>
+        <i style="font-size:16px;">123 Nguyễn Văn Linh</i><br>
+        <span style="font-size:16px;">Chỉ từ: </span><i style="color:red;">20.000<sup>đ</sup></i><br>
+    </div>
+    <div class="rating-group">
+        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                class="rating__icon rating__icon--star fa fa-star"></i>
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star fa fa-star"></i>
+                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                        class="rating__icon rating__icon--star fa fa-star"></i>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i>
+                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i>
+                            <button><a href="../itemRes.html"><i
+                                        class="fa fa-lg fa-long-arrow-right"></i></a></button>
+    </div>
+</div>
+                        <div class="item-restaurant">
+
+    <div class="infor-group">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+    <div class="show-infor-restaurant">
+        <i>Nhà hàng ABC</i><br>
+        <i style="font-size:16px;">123 Nguyễn Văn Linh</i><br>
+        <span style="font-size:16px;">Chỉ từ: </span><i style="color:red;">20.000<sup>đ</sup></i><br>
+    </div>
+    <div class="rating-group">
+        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                class="rating__icon rating__icon--star fa fa-star"></i>
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star fa fa-star"></i>
+                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                        class="rating__icon rating__icon--star fa fa-star"></i>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i>
+                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i>
+                            <button><a href="../itemRes.html"><i
+                                        class="fa fa-lg fa-long-arrow-right"></i></a></button>
+    </div>
+</div>
+                        <div class="item-restaurant">
+
+    <div class="infor-group">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+    <div class="show-infor-restaurant">
+        <i>Nhà hàng ABC</i><br>
+        <i style="font-size:16px;">123 Nguyễn Văn Linh</i><br>
+        <span style="font-size:16px;">Chỉ từ: </span><i style="color:red;">20.000<sup>đ</sup></i><br>
+    </div>
+    <div class="rating-group">
+        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                class="rating__icon rating__icon--star fa fa-star"></i>
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star fa fa-star"></i>
+                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                        class="rating__icon rating__icon--star fa fa-star"></i>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i>
+                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i>
+                            <button><a href="../itemRes.html"><i
+                                        class="fa fa-lg fa-long-arrow-right"></i></a></button>
+    </div>
+</div>
+                        <div class="item-restaurant">
+
+    <div class="infor-group">
+        <img src='../assets/images/food.jpg' alt="food">
+    </div>
+    <div class="show-infor-restaurant">
+        <i>Nhà hàng ABC</i><br>
+        <i style="font-size:16px;">123 Nguyễn Văn Linh</i><br>
+        <span style="font-size:16px;">Chỉ từ: </span><i style="color:red;">20.000<sup>đ</sup></i><br>
+    </div>
+    <div class="rating-group">
+        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                class="rating__icon rating__icon--star fa fa-star"></i>
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star fa fa-star"></i>
+                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                        class="rating__icon rating__icon--star fa fa-star"></i>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i>
+                        <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i>
+                            <button><a href="../itemRes.html"><i
+                                        class="fa fa-lg fa-long-arrow-right"></i></a></button>
+    </div>
+</div>
+                    </div>
+                </div>
+    
+                <button onclick="moveRight(`show-new-restaurant`)" id="btn-arrow-right" class="btn-arroww">
+                    <i class="fa fa-3x fa-arrow-circle-o-right"></i>
+                </button>
+            </div>
+            <!-- NEW-RESTAURANT -->
+            <!-- NEWs -->
+        
+<h4 class="title-res">*</h4>
+<div class="news">
+    <div class="title-show">
+    </div>
+    <div id="show-opinie">
+        <div class="item-opinie">
+            <div class="title-bn">
+              <img src="../assets/images/logo.png" alt="BF">
+            </div>
+            <div class="bn-text">
+                <p class="text-boldd">
+                    Tiện ích
+                </p>
+                <p class="text-normall">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aspernatur dicta iure, ex ratione facere tenetur provident 
+                possimus deserunt temporibus earum cum blanditiis at ea saepe 
+                dolores velit sit voluptatem deleniti.
+                </p>
+            </div>
+        </div>
+        <div class="item-opinie">
+            <div class="title-bn">
+              <img src="../assets/images/logo.png" alt="BF">
+            </div>
+            <div class="bn-text">
+                <p class="text-boldd">
+                    Tiện ích
+                </p>
+                <p class="text-normall">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aspernatur dicta iure, ex ratione facere tenetur provident 
+                possimus deserunt temporibus earum cum blanditiis at ea saepe 
+                dolores velit sit voluptatem deleniti.
+                </p>
+            </div>
+        </div>
+        <div class="item-opinie">
+            <div class="title-bn">
+              <img src="../assets/images/logo.png" alt="BF">
+            </div>
+            <div class="bn-text">
+                <p class="text-boldd">
+                    Tiện ích
+                </p>
+                <p class="text-normall">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aspernatur dicta iure, ex ratione facere tenetur provident 
+                possimus deserunt temporibus earum cum blanditiis at ea saepe 
+                dolores velit sit voluptatem deleniti.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+<footer>
+    <div class="footer-row-one">
+        <div class="company">
+            <span class="name">
+                BFOOD company
+            </span><br />
+            <ul class="address">
+                <li>Nguyễn Văn Linh</li>
+                <li>Tầng 1 Tòa nhà trực thăng</li>
+                <li>Hải Châu Đà Nẵng</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <span class="name">
+                Liên hệ
+            </span><br />
+            <ul class="address">
+                <li>Sđt: +84986 000 123 </li>
+                <li>Website: BFood.com</li>
+                <li>Hot line: 0236 123 456</li>
+            </ul>
+        </div>
+        <div class="about-me">
+            <span class="name">
+                Giới thiệu
+            </span><br />
+            <ul class="address">
+                <li>Được thành lập 2020</li>
+                <li>Với tên gọi BFood</li>
+            </ul>
+        </div>
+        <div class="logo-footer">
+            <div class="logo-bfood lone">
+                BFood
+            </div>
+            <div class="logo-bfood ltow">
+                BFood
+            </div>
+        </div>
+    </div>
+    <div class="footer-row-two">
+        <span>@CopyRight 2020, Design By BFood</span>
+    </div>
+</footer>
+<!-- END OF FOOTER -->
+</body>
+<script src="https://use.fontawesome.com/452826394c.js"></script>
+<script src="./js/common.js"></script>
+
+</html>

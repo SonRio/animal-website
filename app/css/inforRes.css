@@ -1,0 +1,55 @@
+.main-information {
+    position: relative;
+    margin-top: -200px;
+}
+
+.infro-res {
+    width: 80%;
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 20px;
+    padding-top: 50px;
+    font-family: cursive;
+}
+
+.title-wc {
+    text-align: center;
+    color: #616161;
+}
+
+.text-infor {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.infor-row {
+    margin: 10px 0;
+}
+
+.infor-row h1 {
+    color: #f39134;
+}
+
+.infor-res-img {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.infor-res-img img {
+    width: 100%;
+}
+
+.sologan {
+    width: 80%;
+    margin: 10px 10%;
+    margin-bottom: 30px;
+}
+
+.checked {
+    color: #f3a333;
+}

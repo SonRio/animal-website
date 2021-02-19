@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ITEM RESTAURANT</title>
+</head>
+
+<body>
+    @import "header.html"
+    <main>
+        <div class="main-information">
+            @import "inforRes.html"
+            <div class="main-menu">
+                @import "menu.html"
+                <div class="item-menu">
+                    @import "modal.html"
+                    @import "cartIcon.html"
+                    <h3>DANH SÁCH MÓN</h3>
+                    <div id="show-item-menu">
+                        @import "itemMenu.html"
+                        @import "itemMenu.html"
+                        @import "itemMenu.html"
+                        @import "itemMenu.html"
+                    </div>
+                </div>
+            </div>
+            <!-- THANKS  -->
+            <div class="thanks">
+                <h3>CẢM ƠN QUÍ KHÁCH ĐÃ SỬ DỤNG DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                <i class="fa fa-5x fa-cutlery"></i>
+            </div>
+    
+            <!-- COMMENT -->
+            <div class="comment">
+                <div class="count-comment">
+                    <h4>Lượt bình luận</h4>
+                    @import "itemCom.html"
+                    @import "itemCom.html"
+                    @import "itemCom.html"
+                </div>
+                @import "rating.html"
+            </div>
+        </div>
+    </main>
+    @import "footer.html"
+</body>
+<script src="https://use.fontawesome.com/452826394c.js"></script>
+<script src="./js/common.js"></script>
+<!-- endbuild -->
+
+</html>

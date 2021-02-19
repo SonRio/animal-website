@@ -1,0 +1,40 @@
+<div onclick="showItemCart()" id="cart" class="cart-icon">
+    <span id="number"></span>
+</div>
+<!-- CART ICON -->
+
+<!-- CART -->
+<div id="show-cart" style="display: none">
+    <div class="arrow-up"></div>
+    <h3>Giỏ hàng</h3>
+    <div class="label-cart">
+        <label for="name">Món</label>
+        <label for="price">Đơn giá</label>
+    </div>
+    <div id="show-item-cart">
+    </div>
+    <div class="label-cart ship">
+        <span class="label-ship">Phí ship</span>
+        <span class="cost-ship">
+            15.000 <sup>đ</sup>
+        </span>
+    </div>
+    <div class="cart-group safe">
+        <select onchange="changeSafe(this)" class="safe-cost" name="safe" id="safe">
+            <option value=0>NULL<i class="fa fa-2x fa-map-marker"></i></option>
+            <option value=15000>FreeShip<i class="fa fa-2x fa-map-marker"></i></option>
+            <option value=20000>Giảm 20.000 <sup>đ</sup><i class="fa fa-2x fa-map-marker"></i></option>
+        </select>
+    </div>
+    <div class="label-cart total">
+        <label for="total">
+            Tổng tiền:
+        </label>
+        <label for="cost" id="cost"></label>
+    </div>
+
+    <div class="btn-pay">
+        <button onclick="getDelivery()">GIAO HÀNG</button>
+    </div>
+
+</div>

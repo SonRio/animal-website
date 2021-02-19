@@ -1,0 +1,39 @@
+.item-blog-safe {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+}
+
+.item-blog-safe:hover {
+  transition: .4s;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item-blog-safe img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.item-blog-safe h2 {
+    color: #616166;
+}
+
+.item-blog-safe a {
+    color: #ffffff;
+}
+
+.item-blog-safe button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: red;
+    color: #ffffff;
+    width: 100px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}

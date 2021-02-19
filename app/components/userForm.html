@@ -1,0 +1,69 @@
+<div class="main-infor-user">
+    <div class="main-infor">
+        <div>
+            <a href="../index.html">
+                <i class="fa fa-3x fa-home"></i>
+            </a>
+        </div>
+    
+        <div class="information">
+            <h2>Thông tin</h2>
+            <form method="POST" name="form" onsubmit="return onsubmitForm(event)">
+                <div class="form-group">
+                    <i class="fa fa-2x fa-envelope-square"></i>
+                    <input name="email" required type="email" disabled>
+                </div>
+    
+                <div class="form-group">
+                    <i class="fa fa-2x fa-address-card-o"></i>
+                    <input onkeyup="checkValidate('address')" name="address" required
+                        placeholder="Địa chỉ nhận hàng...( >15 ký tự)" type="text">
+                </div>
+    
+                <div class="form-group">
+                    <i class="fa fa-2x fa-phone-square"></i>
+                    <input onkeyup="checkValidate('phone')" name="phone" required
+                        placeholder="Số điện thoại nhận hàng..." type="number" maxlength="11" minlength="10">
+                </div>
+    
+    
+                <div class="form-group">
+                    <i class="fa fa-2x fa-user"></i>
+                    <input name="user" required type="text" disabled>
+                </div>
+    
+                <div class="btn-group">
+                    <button onclick="onsubmitForm(event)" type="submit" class="btn btn-resgister">
+                        Cập nhật
+                    </button>
+                </div>
+            </form>
+    
+            <div onclick="toChangePass()" class="link-to-change-pass">
+                <a href="#">
+                    <i>Đổi mật khẩu</i>
+                    <i class="fa fa-pencil"></i>
+            </div>
+    
+        </div>
+    
+        <div>
+            <div>
+                <i onclick="showUser()" class="fa fa-2x fa-bars" id="icon-menu"></i>
+            </div>
+            <div id="img-user" class="userAction">
+                <div class="arrow-up"></div>
+                <img src="../assets/images/user.jpg" alt="user"><br>
+                <button onclick="showModal()" class="btnUser btn-logout">Đăng xuất</button>
+                <button onclick="toHistory()" class="btnUser btn-history">
+                    Lịch sử</button>
+            </div>
+    
+            <div class="userAction">
+                <img src="../assets/images/user.jpg" alt="user"><br>
+                <button onclick="showModal()" class="btnUser btn-logout">Đăng xuất</button>
+                <button onclick="toHistory()" class="btnUser btn-history">Lịch sử</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FOR GOT PASS</title>
+</head>
+
+<body>
+    <main>
+        <!-- MODAL -->
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <i onclick="hideModal()" class="fa fa-2x fa-window-close"></i>
+                        <h2>Thông báo</h2>
+                        <p id="show-content"></p>
+                        <div class="btn-group-modal">
+                            <a href="#">
+                                <button onclick="eventBtnOne()" id="btn-modal-one" class="btn-modal">
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button onclick="eventBtnTwo()" id="btn-modal-two" class="btn-modal">
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END OF MODAL -->
+        <div class="main-forgot-pass">
+            <div id="forgot">
+    <div id="main-forgot">
+        <div class="img-forgot">
+            <a href="../login.html">
+                <i class="fa fa-3x fa-arrow-circle-left"></i>
+            </a>
+            <img src="../assets/images/bg-detail.jpg" alt="forgot">
+        </div>
+        <div class="fill-email">
+            <h2>Quên mật khẩu</h2>
+            <form action="#" name="form">
+                <div class="form-group">
+                    <i class="fa fa-2x fa-envelope-square"></i>
+                    <input onkeyup="checkValidate('email')" name="email" placeholder="Nhập Email của bạn..."
+                        type="email">
+                </div>
+                <p class="error"></p>
+                <div class="btn-group">
+                    <button onclick="checkToReset(event)" type="submit" class="btn-resgister">
+                        Gửi mã xác thực
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+        </div>
+    </main>
+</body>
+<script src="https://use.fontawesome.com/452826394c.js"></script>
+<script src="./js/common.js"></script>
+
+</html>

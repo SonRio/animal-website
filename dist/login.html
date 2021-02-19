@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--endbuild-->
+    <title>REGISTER</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+<header>
+    <!-- navbar -->
+    <div id=menu class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="/assets/images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#"></a>
+            <a href="#" class="active">ĐỒ ĂN</a>
+            <a href="../index.html">ĐỒ UỐNG</a>
+            <a href="../safe.html">KHUYẾN MÃI</a>
+            <a href="javascript:void(0);" class="icon" onclick="showItemMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a  class="register-login" href="../register.html"><button>Đăng kí</button></a>
+            <a class="register-login" href="../login.html"><button>Đăng nhập</button></a>
+          </div>
+          
+    </div>
+    <div class="title">
+        <img src="../assets/images/logo-banner.png" alt="">
+    </div>
+</header>
+<!-- END OF HEADER -->
+    <main>
+        <div class="main-form">
+  <div class="register">
+
+    <h2>ĐĂNG NHẬP</h2>
+
+    <form 
+      method="POST" 
+      name="form" 
+      onsubmit="return onsubmitForm(event)"
+    >
+
+      <div class="form-group">
+        <i class="fa fa-2x fa-user"></i>
+        <input onkeyup="checkValidate('user')" name="user"  placeholder="Tên đăng nhập..."
+          type="text">
+      </div>
+      <p class="error"></p>
+
+
+      <div class="form-group">
+        <i class="fa fa-2x fa-key"></i>
+        <input onkeyup="checkValidate('password')" name="password"
+          placeholder="Mật khẩu của bạn (> 8 kí tự)..." type="password">
+      </div>
+      <p class="error"></p>
+
+      <div class="btn-group">
+        <button type="submit" class="btn btn-resgister">Đăng nhập</button>
+      </div>
+
+      <div class="link-to-forgot">
+        <i><a href="../forGotPass.html">Quên mật khẩu...</a></i>
+      </div>
+
+    </form>
+
+    <div class="or">
+      <div class="line"></div>
+      <div class="text">Hoặc</div>
+      <div class="line"></div>
+    </div>
+
+    <div class="bnt-orther">
+      <button class="fb">Facebook</button>
+      <button class="gg">Google</button>
+    </div>
+
+    <div class="link-to-login">
+      <div class="line"></div>
+      <a href="../register.html">Đăng ký</a>
+      <div class="line"></div>
+    </div>
+
+  </div>
+</div>
+    </main>
+    <!-- FOOTER -->
+<footer>
+    <div class="footer-row-one">
+        <div class="company">
+            <span class="name">
+                BFOOD company
+            </span><br />
+            <ul class="address">
+                <li>Nguyễn Văn Linh</li>
+                <li>Tầng 1 Tòa nhà trực thăng</li>
+                <li>Hải Châu Đà Nẵng</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <span class="name">
+                Liên hệ
+            </span><br />
+            <ul class="address">
+                <li>Sđt: +84986 000 123 </li>
+                <li>Website: BFood.com</li>
+                <li>Hot line: 0236 123 456</li>
+            </ul>
+        </div>
+        <div class="about-me">
+            <span class="name">
+                Giới thiệu
+            </span><br />
+            <ul class="address">
+                <li>Được thành lập 2020</li>
+                <li>Với tên gọi BFood</li>
+            </ul>
+        </div>
+        <div class="logo-footer">
+            <div class="logo-bfood lone">
+                BFood
+            </div>
+            <div class="logo-bfood ltow">
+                BFood
+            </div>
+        </div>
+    </div>
+    <div class="footer-row-two">
+        <span>@CopyRight 2020, Design By BFood</span>
+    </div>
+</footer>
+<!-- END OF FOOTER -->
+</body>
+<script src="https://use.fontawesome.com/452826394c.js"></script>
+<script src="./js/common.js"></script>
+
+
+</html>

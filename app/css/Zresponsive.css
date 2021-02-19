@@ -1,0 +1,311 @@
+/* RESPONSIVE */
+
+@media screen and (max-width: 739px) {
+    .main-safe {
+        margin-top: -300px;
+      }
+  
+      .blog-show-item-safe {
+        width: 100%;
+        grid-template-columns: auto auto;
+        overflow: auto;
+        height: 450px;
+      }
+  
+      .news #show-opinie {
+        display: flex;
+        flex-direction: column;
+      }
+    .main-detail {
+        width: 90%;
+        margin-top: 20%;
+    }
+    .label-group {
+        width: 80%;
+    }
+    .show-item-dish {
+        width: 80%;
+    }
+    .item-dish {
+        padding: 10px;
+    }
+    .infor-dish img {
+        width: 100px;
+        margin-right: 10px;
+    }
+    .show-infor-delivery {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .show-total {
+        width: 95%;
+    }
+    .btn-reOrder {
+        width: 100px;
+    }
+    .main-form {
+        margin-top: -300px;
+    }
+    .register {
+        width: 90%;
+        margin: 0 5%;
+        padding: 20px 0px;
+        margin-bottom: 50px;
+    }
+    /* LOGO */
+    .title {
+        top: 25%;
+        width: 70%;
+        margin: 0 15%;
+    }
+    /* FOOTER */
+    .footer-row-one {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .search {
+        max-width: 100%;
+        margin: 0;
+        background-color: transparent;
+        border-radius: 10px;
+        margin-top: -140px;
+    }
+    .city {
+        background-color: #D1402A;
+    }
+    .btn-search {
+        background-color: #D1402A;
+    }
+    .title-res::before {
+        content: "--";
+    }
+    .title-res::after {
+        content: "--";
+    }
+    .slide-show {
+        margin-bottom: 30px;
+    }
+    .display-panel {
+        width: 200px;
+    }
+    .show-item-restaurant {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    .item-restaurant img {
+        width: 200px;
+    }
+    .item-restaurant {
+        margin-bottom: 10px;
+        width: 205px;
+    }
+    .title-res:nth-child(5) {
+        margin-top: 50px;
+    }
+    .introduce {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .intro-infor {
+        position: unset;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    .intro-infor p {
+        margin: 10%;
+        width: 80%
+    }
+    .intro-img {
+        display: none;
+        position: unset;
+    }
+    .news #show-opinie {
+        display: flex;
+        flex-direction: column;
+    }
+    #main-forgot {
+        grid-template-columns: auto;
+        transform: translate(0, 100%);
+        width: 90%;
+    }
+    .img-forgot img {
+        display: none;
+    }
+    .img-forgot .fa-arrow-circle-left {
+        position: absolute;
+        top: -50%;
+    }
+    .form-group {
+        width: 80%;
+    }
+    .main-information {
+        margin-top: -430px;
+    }
+    .modal-content {
+        width: 80%;
+    }
+    .infro-res {
+        grid-template-columns: auto;
+    }
+    .sologan i {
+        color: #ffffff;
+    }
+    .infor-res-img {
+        display: none;
+    }
+    .main-menu {
+        grid-template-columns: auto;
+        width: 100%;
+        margin: 0;
+    }
+    .menu {
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .menu h3 {
+        display: none;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .menu ul li:nth-child(1) {
+        padding: 10px 0;
+    }
+    .item-menu {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .btn-add {
+        margin-right: 20px;
+        margin-bottom: 75px;
+    }
+    .comment {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .item-comment {
+        display: grid;
+        padding: 20px 10px;
+        width: 75%;
+        margin: 10px 10%;
+        border-radius: 20px;
+        color: #616161;
+    }
+    .send-comment h4:nth-child(3) {
+        text-align: center;
+    }
+    #show-cart {
+        right: 5%;
+    }
+    .main-history {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .main-history table {
+        height: 600px;
+    }
+    .main-history td, th {
+        padding: 10px;
+    }
+    .pagination a {
+        padding: 5px 5px;
+    }
+    /*  */
+    .main-infor {
+        width: 80%;
+        grid-template-columns: 10% 1fr 10%;
+    }
+    .link-to-change-pass {
+        margin-top: 10%;
+    }
+    #icon-menu {
+        display: block;
+    }
+    .userAction {
+        display: none;
+    }
+}
+
+/* IPAD */
+
+@media only screen and (max-width: 1024px) and (min-width: 739px) {
+    .main-detail {
+        width: 90%;
+        margin-top: 10%;
+    }
+    .main-form {
+        margin-top: -300px;
+    }
+    .register {
+        width: 80%;
+        margin: 0 10%;
+        padding: 20px 0px;
+        margin-bottom: 50px;
+    }
+    .title-res:nth-child(5) {
+        margin-top: 350px;
+    }
+    .display-panel {
+        width: 79%;
+    }
+    .item-restaurant img {
+        width: 150px;
+    }
+    #main-forgot {
+        width: 90%;
+    }
+    .main-information {
+        margin-top: -260px;
+    }
+    .modal-content {
+        width: 40%;
+    }
+    .main-menu {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .fa-arrow-circle-left {
+        top: 3%;
+    }
+    .main-history {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .main-history table {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

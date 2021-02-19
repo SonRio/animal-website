@@ -1,0 +1,52 @@
+footer {
+  width: 100%;
+  background-color: #D1402A;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-row-one {
+  width: 80%;
+  margin: 0 10%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  list-style: none;
+  padding: 0;
+}
+
+.address li {
+  line-height: 40px;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.logo-bfood {
+  min-width: 100px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.lone {
+  background-color: #DAB480;
+}
+
+.ltow {
+  background-color: #000000;
+}
+
+.footer-row-two {
+  padding: 10px;
+  font-style: italic;
+  font-size: 16px;
+}

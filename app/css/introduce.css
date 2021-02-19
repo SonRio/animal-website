@@ -1,0 +1,48 @@
+.introduce {
+  position: relative;
+  width: 80%;
+  margin: 7% 10% 50% 10%;
+  margin-bottom: 100px;
+  display: flex;
+  top: 10px;
+}
+
+.intro-infor {
+  background-color: #D1402A;
+  color: #ffffff;
+  padding-bottom: 10px;
+  width: 40%;
+  padding: 15px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+  height: 230px;
+  line-height: 25px;
+}
+
+.intro-infor h4 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.intro-infor p {
+  font-style: italic;
+}
+
+.intro-img {
+  width: 40%;
+  background-color: #DAB480;
+  left: 0;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.intro-img img {
+  border-radius: 200px;
+}

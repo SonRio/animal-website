@@ -1,0 +1,145 @@
+.main-detail-history {
+    background-image: url(../assets/images/bg-detail.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-size: cover;
+}
+
+.fa-arrow-circle-left {
+    position: sticky;
+    color: #616161;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.fa-arrow-circle-left:hover {
+    color: #000000;
+}
+
+.main-detail {
+    width: 70%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-top: 3%;
+}
+
+.main-detail h1 {
+    text-align: center;
+    color: #D1402A;
+    font-family: cursive;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: -30px;
+}
+
+.label-group {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.show-item-dish {
+    background-color: #D1402A;
+    height: 200px;
+    width: 70%;
+    border: 5px solid #D1402A;
+    overflow: auto;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.item-dish {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    align-items: center;
+}
+
+.infor-dish {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.infor-dish img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.item-dish .count {
+    background-color: #616161;
+    color: #ffffff;
+    font-weight: 600;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #000000;
+    margin-left: 20px;
+}
+
+.show-infor-delivery {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.infor-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.infor-group .infor {
+    font-weight: 600;
+    font-style: italic;
+    font-style: underline;
+    text-decoration: underline;
+}
+
+.show-total {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-reOrder {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #D1402A;
+    color: #ffffff;
+    width: 200px;
+    padding: 7px 10px;
+}
+
+.btn-reOrder:hover {
+    background-color: #000000;
+}
+
+.show-total label {
+    margin-right: 20px;
+}

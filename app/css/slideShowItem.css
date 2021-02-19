@@ -1,0 +1,72 @@
+.title-res {
+  font-size: 24px;
+  text-align: center;
+  font-family: Poppins;
+  color: #626161;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.title-res:nth-child(5) {
+  margin-top: 350px;
+}
+
+.title-res::before {
+  content: "------------------";
+  color: #616161;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.title-res::after {
+  content: "-----------------";
+  color: #616161;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.slide-show {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 5%;
+  justify-content: space-between;
+}
+
+.btn-arroww {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.btn-arroww:hover {
+  color: #D1402A;
+}
+
+.display-panel {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  float: left;
+}
+
+.show-item-restaurant {
+  position: relative;
+  left: 0px;
+  transition: .5s;
+  color: #c4c4c4;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-infor-restaurant {
+  font-size: 18px;
+  line-height: 20px;
+  padding: 5px 15px;
+}
+
+/* ----------------------------------------------- */
